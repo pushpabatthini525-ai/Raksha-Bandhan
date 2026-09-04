@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fffaf7;
+    color: #333;
+    transition: 0.4s;
+}
+
+header {
+    background: #d6336c;
+    padding: 15px 7%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar h2 {
+    color: white;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 22px;
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#themeBtn {
+    background: white;
+    color: #333;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #ffd6e7,
+        #fff0f5,
+        #ffe8cc
+    );
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.small-title {
+    color: #d6336c;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 55px;
+    color: #c2255c;
+    margin: 20px 0;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+button {
+    background: #d6336c;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.section-title {
+    text-align: center;
+    color: #c2255c;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+section {
+    padding: 70px 8%;
+}
+
+.bond-container,
+.card-container,
+.rakhi-container,
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.bond-card,
+.wish-card,
+.gift-card,
+.rakhi {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.bond-card:hover,
+.wish-card:hover,
+.gift-card:hover,
+.rakhi:hover {
+    transform: translateY(-10px);
+}
+
+.big-icon {
+    font-size: 70px;
+}
+
+.wish-card span,
+.gift-card span {
+    font-size: 50px;
+}
+
+.wish-card h3,
+.gift-card h3,
+.bond-card h3,
+.rakhi h3 {
+    color: #d6336c;
+    margin: 15px 0;
+}
+
+.pink-section {
+    background: #fff0f5;
+}
+
+.rakhi-container {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.rakhi {
+    font-size: 65px;
+}
+
+.gallery-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gallery-container {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.photo-box {
+    height: 180px;
+    background: #ffd6e7;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+}
+
+.generator {
+    text-align: center;
+}
+
+.generator input {
+    padding: 14px;
+    width: 250px;
+    border: 2px solid #d6336c;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+#generatedMessage {
+    margin: 25px auto;
+    max-width: 700px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #c2255c;
+}
+
+.countdown-section {
+    text-align: center;
+}
+
+#countdown {
+    font-size: 40px;
+    font-weight: bold;
+    color: #d6336c;
+}
+
+.final-message {
+    text-align: center;
+    background: linear-gradient(135deg, #d6336c, #f06595);
+    color: white;
+}
+
+.final-message h2 {
+    margin-bottom: 25px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Dark Mode */
+
+.dark-mode {
+    background: #181818;
+    color: white;
+}
+
+.dark-mode .bond-card,
+.dark-mode .wish-card,
+.dark-mode .gift-card,
+.dark-mode .rakhi {
+    background: #292929;
+    color: white;
+}
+
+.dark-mode .pink-section {
+    background: #222;
+}
+
+.dark-mode .photo-box {
+    background: #333;
+}
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .bond-container,
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .rakhi-container,
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+
+    .rakhi-container,
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    .generator input {
+        width: 100%;
+    }
+}
