@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Raksha Bandhan ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <h2>🪢 Raksha Bandhan</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#bond">Bond</a></li>
+                <li><a href="#wishes">Wishes</a></li>
+                <li><a href="#gifts">Gifts</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+
+            <button id="themeBtn">🌙</button>
+
+        </nav>
+    </header>
+
+
+    <!-- Home -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">A Festival of Love & Togetherness</p>
+
+            <h1>Happy Raksha Bandhan ❤️</h1>
+
+            <p>
+                Celebrating the beautiful bond between
+                brothers and sisters.
+            </p>
+
+            <button onclick="showLove()">
+                Send Love ❤️
+            </button>
+
+            <p id="loveMessage"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Brother Sister Bond -->
+    <section id="bond">
+
+        <h2 class="section-title">
+            👧👦 Brother & Sister Bond
+        </h2>
+
+        <div class="bond-container">
+
+            <div class="bond-card">
+                <div class="big-icon">👧</div>
+
+                <h3>Sister's Love</h3>
+
+                <p>
+                    A sister is a beautiful part of every
+                    brother's life. She brings love,
+                    care and unforgettable memories.
+                </p>
+            </div>
+
+
+            <div class="bond-card">
+                <div class="big-icon">👦</div>
+
+                <h3>Brother's Protection</h3>
+
+                <p>
+                    A brother is someone who supports,
+                    protects and stands beside his sister
+                    through every moment.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Wishes -->
+    <section id="wishes" class="pink-section">
+
+        <h2 class="section-title">
+            💌 Special Wishes
+        </h2>
+
+        <div class="card-container">
+
+            <div class="wish-card">
+                <span>❤️</span>
+                <h3>Forever Bond</h3>
+                <p>
+                    May the bond between brother and sister
+                    remain strong forever.
+                </p>
+            </div>
+
+
+            <div class="wish-card">
+                <span>🌸</span>
+                <h3>Beautiful Memories</h3>
+                <p>
+                    May every Raksha Bandhan create another
+                    beautiful memory to remember.
+                </p>
+            </div>
+
+
+            <div class="wish-card">
+                <span>✨</span>
+                <h3>Happy Life</h3>
+                <p>
+                    Wishing you both a life filled with
+                    happiness, success and love.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Gifts -->
+    <section id="gifts">
+
+        <h2 class="section-title">
+            🎁 Gift Ideas
+        </h2>
+
+        <div class="card-container">
+
+            <div class="gift-card">
+                <span>⌚</span>
+                <h3>Watch</h3>
+                <p>A stylish gift for your brother.</p>
+            </div>
+
+
+            <div class="gift-card">
+                <span>🎧</span>
+                <h3>Headphones</h3>
+                <p>A useful and fun gift for music lovers.</p>
+            </div>
+
+
+            <div class="gift-card">
+                <span>👜</span>
+                <h3>Handbag</h3>
+                <p>A beautiful gift for your sister.</p>
+            </div>
+
+
+            <div class="gift-card">
+                <span>🍫</span>
+                <h3>Chocolates</h3>
+                <p>Sweet memories with a sweet gift.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Rakhi -->
+    <section id="rakhi" class="pink-section">
+
+        <h2 class="section-title">
+            🪢 Beautiful Rakhi
+        </h2>
+
+        <div class="rakhi-container">
+
+            <div class="rakhi">
+                🪢
+                <h3>Traditional Rakhi</h3>
+            </div>
+
+            <div class="rakhi">
+                🌸
+                <h3>Flower Rakhi</h3>
+            </div>
+
+            <div class="rakhi">
+                💎
+                <h3>Designer Rakhi</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Gallery -->
+    <section id="gallery">
+
+        <h2 class="section-title">
+            📸 Memory Gallery
+        </h2>
+
+        <p class="gallery-info">
+            Add your beautiful brother and sister memories here ❤️
+        </p>
+
+        <div class="gallery-container">
+
+            <div class="photo-box">📸<br>Memory 1</div>
+            <div class="photo-box">📸<br>Memory 2</div>
+            <div class="photo-box">📸<br>Memory 3</div>
+            <div class="photo-box">📸<br>Memory 4</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Name Generator -->
+    <section class="generator pink-section">
+
+        <h2 class="section-title">
+            ✍️ Personalized Raksha Bandhan Message
+        </h2>
+
+        <input
+            type="text"
+            id="sisterName"
+            placeholder="Enter Sister's Name"
+        >
+
+        <input
+            type="text"
+            id="brotherName"
+            placeholder="Enter Brother's Name"
+        >
+
+        <br><br>
+
+        <button onclick="generateMessage()">
+            Create Message 💌
+        </button>
+
+        <div id="generatedMessage"></div>
+
+    </section>
+
+
+    <!-- Countdown -->
+    <section class="countdown-section">
+
+        <h2 class="section-title">
+            🎊 Raksha Bandhan Countdown
+        </h2>
+
+        <div id="countdown">
+            Loading...
+        </div>
+
+    </section>
+
+
+    <!-- Final Message -->
+    <section class="final-message">
+
+        <h2>
+            “A Rakhi is not just a thread,
+            it is a promise of love and protection.” ❤️
+        </h2>
+
+        <button onclick="showLove()">
+            Celebrate Love ❤️
+        </button>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Raksha Bandhan | Made with ❤️
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
